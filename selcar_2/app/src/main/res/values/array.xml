@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="카테고리">
+        <item>유저 게시판</item>
+        <item>옥션 게시판</item>
+        <item>질문 게시판</item>
+    </string-array>
+
+    <string-array name="SpinnerTtile">
+        <item>비어있음.</item>
+    </string-array>
+
+</resources>

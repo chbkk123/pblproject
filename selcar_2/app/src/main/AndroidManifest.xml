@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nicarng.selcar">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Selpcar"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MapActivity2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReservlistActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NoticeBoardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".IndvActivity"
+            android:parentActivityName=".MapActivity" />
+        <activity
+            android:name=".ResActivity"
+            android:parentActivityName=".IndvActivity" />
+        <activity
+            android:name=".CheckActivity"
+            android:parentActivityName=".ResActivity" />
+        <activity android:name=".designActivity" />
+        <activity android:name=".CarInfoActivity" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="1d25624ca7ce2d2404ff9471b43bfa6f" />
+
+        <activity android:name=".ManagementActivity" />
+        <activity android:name=".MyreservActivity"/>
+        <activity android:name=".CheckedmycarActivity" />
+        <activity android:name=".UserCaraddActivity" />
+        <activity android:name=".SubscribeActivity" />
+        <activity android:name=".poplogin" />
+        <activity android:name=".InnerBoard" />
+        <activity android:name=".tutorial.TutorialActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="nicarng.selcar"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+    </application>
+
+</manifest>

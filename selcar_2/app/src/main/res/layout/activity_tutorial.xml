@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/taeduri1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tuttext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUIDE"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:textColor="#00FF09"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tuttext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. SUBSCRIBE"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#00ff09"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tuttext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a subscription-based car-sharing service.Subscribe and rent the car at a least price!"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/taeduri"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:typeface="monospace"/>
+            <TextView
+                android:id="@+id/tuttext4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. REGISTER"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#00ff09"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tuttext5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can register your car and make a profit! And you can be rewarded according to 'LIKE' count!"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/taeduri"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:typeface="monospace"/>
+
+            <TextView
+                android:id="@+id/tuttext6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. information"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#00ff09"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tuttext7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can get a intformation about car and request your problem!"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/taeduri"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:typeface="monospace"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="bottom"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:onClick="mOnClose"
+            android:padding="16dp"
+            android:text="확인"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

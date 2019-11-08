@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservlistActivity"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/layout_shape"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/layout_shape"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/basic_image"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/user_id"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="아이디"
+                            android:gravity="center_vertical"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/user_grade"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="등급"
+                            android:gravity="center_vertical"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="이메일"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/user_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="휴대폰 번호"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/reserve_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="예약 사용 완료"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/my_car_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="나의 차량 사용"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.33"
+                android:text="로그아웃"
+                android:gravity="center"
+                android:background="@drawable/layout_shape"/>
+            <TextView
+                android:id="@+id/change_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.33"
+                android:text="비밀번호 변경"
+                android:gravity="center"
+                android:background="@drawable/layout_shape"/>
+            <TextView
+                android:id="@+id/withdrawal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.33"
+                android:text="회원탈퇴"
+                android:gravity="center"
+                android:background="@drawable/layout_shape"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="#ffffff">
+
+            <ImageButton
+                android:id="@+id/myreservelist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/check_reserve"
+                android:background="@drawable/button_border_circle3"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/register_my_car"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/enroll_my_car"
+                android:background="@drawable/button_border_circle3" />
+
+            <ImageButton
+                android:id="@+id/checked_my_car"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/checked_my_car"
+                android:background="@drawable/button_border_circle3"/>
+
+            <ImageButton
+                android:id="@+id/subscribe_go"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/subscribe"
+                android:background="@drawable/button_border_circle3"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

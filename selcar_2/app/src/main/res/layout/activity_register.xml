@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".RegisterActivity"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/IDText"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:background="@drawable/taeduri"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/IDCheckButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignStart="@+id/IDText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:text="ID CHECK"
+            android:background="@drawable/taeduri"
+            android:layout_marginLeft="10dp"
+            android:textColor="#3F51B5"/>
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/PWText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:background="@drawable/taeduri"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/PW_CheckText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="PASSWORD CHECK"
+            android:inputType="textPassword"
+            android:background="@drawable/taeduri"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/NAMEText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="NAME"
+            android:inputType="textPersonName"
+            android:background="@drawable/taeduri"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/EmailText"
+            android:ems="10"
+            android:hint="E-MAIL ADDRESS"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/taeduri"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:id="@+id/Phone_numberText"
+                android:hint="PHONE-NUMBER"
+                android:inputType="phone"
+                android:ems="10"
+                android:background="@drawable/taeduri"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="'-' 없이 입력해 주세요"
+                android:textColor="#e60202"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/FinishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FINISH"
+            android:background="@drawable/taeduri"
+            android:textColor="#3F51B5"/>
+
+
+
+
+    </LinearLayout>
+
+

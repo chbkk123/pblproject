@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_subscribe"
+            android:icon="@drawable/ic_create_black_24dp"
+            android:title="Subscribe" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Register my car" />
+        <item
+            android:id="@+id/nav_reservation"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="My reservation" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="My info" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_board"
+                android:icon="@drawable/ic_event_note_black_24dp"
+                android:title="board" />
+
+            <item
+                android:id="@+id/nav_guide"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="guide" />
+        </menu>
+    </item>
+
+</menu>
