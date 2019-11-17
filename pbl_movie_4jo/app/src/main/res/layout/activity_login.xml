@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="165dp">
+
+
+        <EditText
+            android:id="@+id/IDText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="ID를 입력해주세요"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/PWText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="PASSWORD를 입력해주세요"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/PWText"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOG-IN"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/RegisterTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="REGISTER" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
